@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>contact.html</title>
+</head>
+<body>
+
+
+
+    <fieldset>
+        <legend>Contactez-moi</legend>
+        
+        <form action="#" method="post">
+            
+            <p>
+                Civilité : 
+                Monsieur <input type="radio" name="civilite" value="Monsieur" checked> 
+                Madame <input type="radio" name="civilite" value="Madame"> 
+                Mademoiselle <input type="radio" name="civilite" value="Mademoiselle">
+            </p>
+
+            <p>
+                Nom : <input type="text" name="nom" value="Votre nom" required> 
+                Prénom : <input type="text" name="prenom" value="Votre prénom" required>
+            </p>
+
+            <p>
+                Email : <input type="email" name="email" value="Votre e-mail" required> 
+                Téléphone : <input type="tel" name="telephone" value="Votre téléphone" pattern="9[0-9]{7}" maxlength="8" title="Doit contenir 8 chiffres et commencer par 9" required>
+            </p>
+
+            <p>
+                Sujet : <input type="text" name="sujet" value="Votre sujet" required>
+            </p>
+
+            <p>
+                Message :<br>
+                <textarea name="message" rows="6" cols="50" required></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </p>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
